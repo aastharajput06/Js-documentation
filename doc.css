@@ -1,0 +1,94 @@
+body {
+  background-color: white;
+  min-width: 290px;
+  color: grey;
+  line-height: 1.5;
+  padding-left: 300px;
+}
+
+#navbar {
+  color: black;
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: black;
+}
+
+header {
+  color: black;
+  text-align: center;
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+#main-doc header {
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+#navbar ul {
+  height: 100%;
+  padding: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  list-style-type: none;
+}
+#navbar li {
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 2em;
+  font-weight: bolder;
+  font-size: 20px;
+}
+#navbar a {
+  text-decoration: none;
+}
+
+#main-doc {
+  margin-left: 30px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+section article {
+  margin: 15px;
+  font-size: 15px;
+}
+
+code {
+  display: block;
+  background-color: rgb(160, 159, 154);
+  color: black;
+  padding: 15px;
+  margin: 5px;
+}
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #navbar ul {
+    height: 270px;
+  }
+
+  #navbar {
+    background-color: grey;
+    position: auto;
+    width: 100%;
+    height: 320px;
+    z-index: 1;
+    padding: 10px;
+  }
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+}
